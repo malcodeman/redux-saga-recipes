@@ -7,7 +7,7 @@ function* fetchSpotPrice() {
   try {
     const data = yield call(api.getSpotPrice);
 
-    yield put({ type: types.GET_SPOT_PRICE_SUCCESS, payload: data.data.data });
+    yield put({ type: types.GET_SPOT_PRICE_SUCCESS, payload: data.data });
   } catch (error) {
     yield put({ type: types.GET_SPOT_PRICE_FAILURE, message: error.message });
   }

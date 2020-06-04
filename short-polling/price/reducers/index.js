@@ -9,7 +9,7 @@ function price(state = initial, action) {
     case types.GET_SPOT_PRICE_SUCCESS:
       return {
         ...state,
-        spotPrice: action.payload,
+        spotPrice: action.payload.data,
       };
     default:
       return state;
