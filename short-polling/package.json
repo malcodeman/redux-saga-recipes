@@ -23,5 +23,6 @@
     "eslint": "^7.2.0",
     "eslint-plugin-react": "^7.20.0",
     "parcel": "^2.0.0-alpha.3.2"
-  }
+  },
+  "browserslist": "Chrome 70"
 }
